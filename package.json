@@ -1,0 +1,23 @@
+{
+  "name": "octavius-design-system",
+  "version": "0.0.1",
+  "description": "Octavius Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch octavius.scss -o dist --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pouchnation/octavius-design-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pouchnation/octavius-design-system/issues"
+  },
+  "homepage": "https://github.com/pouchnation/octavius-design-system#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
