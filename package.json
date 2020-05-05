@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch octavius.scss -o dist --output-style compressed"
+    "watch": "node-sass --watch octavius.scss -o dist --output-style compressed",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,13 @@
   },
   "homepage": "https://github.com/pouchnation/octavius-design-system#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "husky": "^4.2.3",
+    "express": "^4.17.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node-sass octavius.scss -o dist --output-style compressed"
+    }
   }
 }
